@@ -9,11 +9,27 @@ header{
     height: 70px;
     background-color: #ff00ff;
     padding: 30px 20px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+header > :first-child{
+    margin-right: auto;
+}
+
+header >div{
+    flex-basis:140px;
+    height: 70px;
+    background-color: #fbb3ff;
+    margin:  0 10px;
+
+    
 }
 
 main{
-    max-width:700px; 
     margin: 0 auto;
+    display: flex;
+    justify-content:center;
 }
 
 .left_box{
@@ -22,12 +38,35 @@ main{
 }
 
 .right_box{
+    max-width:700px; 
     padding: 20px;
     background-color: #07b524;
+    flex-grow:1;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 .box_s{
-    width: 200px;
+    flex-basis:200px;
     height: 130px;
     margin: 10px;
+    background-color: #fff75a;
+}
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: #52a1ff;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.footer_box{
+    height: 40px;
+    width: 45%;
+    max-width: 600px;
+    margin: 10px;
+    background-color: #b6e7ff;
 }
